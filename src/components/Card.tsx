@@ -1,22 +1,19 @@
     import styles from './card.module.css'
     import Image from 'next/image'
 
-    export default function Card(){
+    export default function Card({venueName,imgSrc}:{venueName:string,imgSrc:string}){
         return(
-            <div className={styles.card}>
-                <div className={styles.cardimg}>
-                    <Image src={'/img/room1.jpg'} 
+            <div className="relative w-[280px] h-[320px] bg-white shadow-md shadow-black/20 rounded-[10px] overflow-hidden">
+                <div className="relative w-full h-1/2">
+                    <Image src= {imgSrc} 
                         alt='Product Picture'
                         fill={true}
-                        objectFit='cover'
+                        objectFit= 'cover'
                     />
                 </div>
                 <div className={styles.cardText}>
-                        Viridian Dome Hotel: Picus Hall A
-                    <div className={styles.cardDesc}>
-                        Host your unforgettable gala in our elegant ballroom: white-linen tables, towering floral centerpieces, candlelit ambiance, dramatic purple-orange lighting, premium service.
-                    </div>
-                    </div>
+                    {venueName}
+                </div>
             </div>
-        )
+        );
     }

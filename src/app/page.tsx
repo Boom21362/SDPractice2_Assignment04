@@ -8,7 +8,9 @@ export default function Home() {
       <main>
        <Banner/>
        <div style={{margin:"20px",display:"flex",flexDirection:"row",flexWrap:"wrap",justifyContent:"flex-start",alignContent:"flex-start" ,gap: "50px"}}>
-         <Card/>
+         <Card venueName="The Bloom Pavilion" imgSrc="/img/bloom.jpg" />
+         <Card venueName="Spark Space" imgSrc="/img/sparkspace.jpg"/> 
+         <Card venueName="The Grand Table" imgSrc="/img/grandtable.jpg" /> 
        </div>
       </main>
     
