@@ -1,0 +1,17 @@
+.banner{
+    display: block;
+    padding: 5px;
+    margin: 0;
+    width: 100wh;
+    height: 60vh;
+    position: relative;
+}
+
+.bannerText{
+    position: relative;
+    top: 100px;
+    z-index: 20;
+    text-align: center;
+    font-size: 35px;
+    color: color-mix(in srgb, black 50%, rgb(54, 6, 77) 50%);
+}
